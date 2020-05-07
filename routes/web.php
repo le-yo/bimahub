@@ -13,20 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::middleware('page-cache')->get('/', function () {
     return view('welcome');
 });
-Route::prefix('about')->group(function() {
+Route::middleware('page-cache')->prefix('about')->group(function() {
     Route::get('/', function () {
         return view('about');
     });
-    Route::get('/committee', function () {
+    Route::middleware('page-cache')->get('/committee', function () {
         return view('about');
     });
 });
 
 
-Route::prefix('bimabox')->group(function() {
+Route::middleware('page-cache')->prefix('bimabox')->group(function() {
     Route::get('/', function () {
         return view('bimabox');
     });
@@ -41,7 +41,7 @@ Route::prefix('bimabox')->group(function() {
     });
 });
 
-Route::prefix('bimalab')->group(function() {
+Route::middleware('page-cache')->prefix('bimalab')->group(function() {
     Route::get('/', function () {
         return view('bimalab');
     });
@@ -54,7 +54,7 @@ Route::prefix('bimalab')->group(function() {
 });
 
 
-Route::get('/regtech', function () {
+Route::middleware('page-cache')->get('/regtech', function () {
     return view('regtech');
 });
 
