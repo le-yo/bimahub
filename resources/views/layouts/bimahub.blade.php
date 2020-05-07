@@ -82,14 +82,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
-                    <div id="logo" class="logo">
-                        <a href="#" title="">
-                            <img src="{{ asset('bimahub')}}/images/logo.png" alt="Bimahub Logo" style="width: 320px;!important;" />
-                        </a>
-                    </div><!-- /#logo -->
+                    <div class="iconbox style2 v2">
+                        <div class="iconbox-content logosize">
+                            <img src="{{ asset('bimahub')}}/images/ira.png" alt="IRA">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="iconbox style2 v2">
+                        <div class="iconbox-content logosize">
+                            <img src="{{ asset('bimahub')}}/images/bimahub.png" alt="IRA">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="iconbox style2 v2">
+                        <br>
                         <div class="iconbox-icon">
                             <i class="fa fa-paper-plane-o"></i>
                         </div>
@@ -99,19 +107,20 @@
                         </div>
                     </div>
                 </div>
+                {{--<div class="col-lg-3 col-sm-6">--}}
+                    {{--<div class="iconbox style2 v2">--}}
+                        {{--<div class="iconbox-icon">--}}
+                            {{--<i class="fa fa-map-marker"></i>--}}
+                        {{--</div>--}}
+                        {{--<div class="iconbox-content">--}}
+                            {{--<h4>Location</h4>--}}
+                            {{--<p>Upper hill, Nairobi</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <div class="col-lg-3 col-sm-6">
                     <div class="iconbox style2 v2">
-                        <div class="iconbox-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="iconbox-content">
-                            <h4>Location</h4>
-                            <p>Upper hill, Nairobi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="iconbox style2 v2">
+                        <br>
                         <div class="iconbox-icon">
                             <i class="fa fa-clock-o"></i>
                         </div>

@@ -74,3 +74,8 @@
     height: 160px;
 
 }
+.logosize{
+    max-width: 80%;
+
+    height: auto;
+}
