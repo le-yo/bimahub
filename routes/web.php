@@ -16,35 +16,46 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/committee', function () {
-    return view('about');
-});
-Route::get('/application', function () {
-    return view('application');
+Route::prefix('about')->group(function() {
+    Route::get('/', function () {
+        return view('about');
+    });
+    Route::get('/committee', function () {
+        return view('about');
+    });
 });
 
-Route::get('/bimabox', function () {
-    return view('bimabox');
+
+Route::prefix('bimabox')->group(function() {
+    Route::get('/', function () {
+        return view('bimabox');
+    });
+    Route::get('/eligibility', function () {
+        return view('eligibility');
+    });
+    Route::get('/evaluation', function () {
+        return view('evaluation');
+    });
+    Route::get('/application', function () {
+        return view('application');
+    });
 });
-Route::get('/eligibility', function () {
-    return view('eligibility');
+
+Route::prefix('bimalab')->group(function() {
+    Route::get('/', function () {
+        return view('bimalab');
+    });
+    Route::get('/innovation', function () {
+        return view('innovation');
+    });
+    Route::get('/insurtech', function () {
+        return view('insurtech');
+    });
 });
-Route::get('/evaluation', function () {
-    return view('evaluation');
-});
-Route::get('/innovation', function () {
-    return view('innovation');
-});
-Route::get('/insurtech', function () {
-    return view('insurtech');
-});
+
+
 Route::get('/regtech', function () {
     return view('regtech');
 });
 
-Route::get('/bimalab', function () {
-    return view('bimalab');
-});
+

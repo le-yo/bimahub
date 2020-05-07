@@ -116,7 +116,7 @@ return [
             'deploy_path' => '/var/www/bimahub',
             'user' => 'root',
             'http_user' => 'www-data',
-            'strategy' => 'firstdeploy',
+            'strategy' => 'basic',
             'stage' => 'master',
             'branch' => 'master',
         ],

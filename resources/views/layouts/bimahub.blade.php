@@ -95,7 +95,7 @@
                         </div>
                         <div class="iconbox-content">
                             <h4>Email</h4>
-                            <p>innovations@ira.go.ke</p>
+                            <p>innovationhub@ira.go.ke</p>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                                 </div><!-- //mobile menu button -->
                                 <nav id="mainnav" class="mainnav">
                                     <ul class="menu">
-                                        <li class="active">
+                                        <li class="{{ (request()->is('/')) ? 'active' : '' }}">
                                             <a href="/" title="">Home</a>
                                             <!--<ul class="sub-menu">-->
                                             <!--<li class="active"><a href="#" title="">Home 01</a></li>-->
@@ -160,32 +160,32 @@
                                             <!--<li><a href="index-05" title="">Home 05</a></li>-->
                                             <!--</ul>&lt;!&ndash; /.sub-menu &ndash;&gt;-->
                                         </li>
-                                        <li>
-                                            <a href="/about" title="">About Us</a>
+                                        <li class="{{ (request()->segment(1) == 'about') ? 'active' : '' }}">
+                                            <a href="{{url('/about')}}" title="">About Us</a>
                                             <ul class="sub-menu">
-                                           <li><a href="committee" title="">Bima Innovate Committee</a></li>
+                                           <li><a href="/about/committee" title="">Bima Innovate Committee</a></li>
                                             </ul>
 
                                         </li>
-                                        <li>
+                                        <li class="{{ (request()->segment(1) == 'bimalab') ? 'active' : '' }}">
                                             <a href="bimalab" title="">BimaLab</a>
                                             <ul class="sub-menu">
-                                                <li><a href="bimalab" title="">About Bimalab</a></li>
-                                                <li><a href="insurtech" title="">InsurTech Hackathon</a></li>
-                                                <li><a href="innovation" title="">Innovation Bootcamp</a></li>
+                                                <li><a href="/bimalab" title="">About Bimalab</a></li>
+                                                <li><a href="/bimalab/insurtech" title="">InsurTech Hackathon</a></li>
+                                                <li><a href="/bimalab/innovation" title="">Innovation Bootcamp</a></li>
                                             </ul><!-- /.sub-menu -->
                                         </li>
-                                        <li>
-                                            <a href="bimabox" title="">BimaBox</a>
+                                        <li class="{{ (request()->segment(1) == 'bimabox') ? 'active' : '' }}">
+                                            <a href="/bimabox" title="">BimaBox</a>
                                             <ul class="sub-menu">
-                                                <li><a href="bimabox" title="">About BimaBox</a></li>
-                                                <li><a href="eligibility" title="">Eligibility</a></li>
-                                                <li><a href="evaluation" title="">Evaluation</a></li>
-                                                <li><a href="application" title="">Application Form</a></li>
+                                                <li><a href="/bimabox" title="">About BimaBox</a></li>
+                                                <li><a href="/bimabox/eligibility" title="">Eligibility</a></li>
+                                                <li><a href="/bimabox/evaluation" title="">Evaluation</a></li>
+                                                <li><a href="/bimabox/application" title="">Application Form</a></li>
                                             </ul><!-- /.sub-menu -->
                                         </li>
-                                        <li>
-                                            <a href="regtech" title="">RegTech</a>
+                                        <li class="{{ (request()->segment(1) == 'regtech') ? 'active' : '' }}">
+                                            <a href="/regtech" title="">RegTech</a>
                                             <!--<ul class="sub-menu">-->
                                             <!--<li><a href="blog" title="">Blog</a></li>-->
                                             <!--<li><a href="blog-v2" title="">Blog 02</a></li>-->
@@ -193,14 +193,14 @@
                                             <!--<li><a href="blog-single" title="">Blog Grid</a></li>-->
                                             <!--</ul>&lt;!&ndash; /.sub-menu &ndash;&gt;-->
                                         </li>
-                                        <li>
+                                        <li class="{{ (request()->segment(1) == 'news') ? 'active' : '' }}">
                                             <a href="#" title="">News & Events</a>
                                             <!--<ul class="sub-menu">-->
                                             <!--<li><a href="404" title="">Error Page</a></li>-->
                                             <!--<li><a href="pricing" title="">Pricing</a></li>-->
                                             <!--</ul>&lt;!&ndash; /.sub-menu &ndash;&gt;-->
                                         </li>
-                                        <li>
+                                        <li class="{{ (request()->segment(1) == 'downloads') ? 'active' : '' }}">
                                             <a href="#" title="">Downloads</a>
                                             <ul class="sub-menu">
                                                 <li><a href="{{ asset('bimahub')}}/downloads//BimaBox_Guidance_Note.pdf" title="">BimaBox Guidance Note</a></li>
