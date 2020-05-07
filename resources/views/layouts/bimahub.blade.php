@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-page">
-                        Welcome to Bimahub: An innovation hub for the insurance regulatory authority
+                        Welcome to Bimahub: An innovation hub for the Insurance Regulatory Authority
                     </div>
                     <ul class="flat-social">
                         <li>
