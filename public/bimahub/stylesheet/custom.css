@@ -54,3 +54,23 @@
     z-index: -1;
 
 }
+
+.parallax {
+
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    position: relative;
+    z-index: 9;
+    height: 160px;
+
+}
+.page-title {
+    position: relative;
+    background-image: url('../images/parallax/03.jpg');
+    background-position: 50% 0;
+    position: relative;
+    z-index: 9;
+    height: 160px;
+
+}
