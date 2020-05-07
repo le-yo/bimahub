@@ -259,6 +259,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="parallax parallax3 scroll">
         <div class="container">
             <div class="row">

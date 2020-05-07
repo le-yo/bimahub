@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('page-cache')->get('/', function () {
+Route::get('/', function () {
     return view('welcome');
 });
-Route::middleware('page-cache')->prefix('about')->group(function() {
+Route::prefix('about')->group(function() {
     Route::get('/', function () {
         return view('about');
     });

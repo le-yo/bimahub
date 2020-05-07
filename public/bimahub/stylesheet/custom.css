@@ -62,8 +62,11 @@
     background-position: 50% 0;
     position: relative;
     z-index: 9;
-    height: 160px;
 
+
+}
+.onesixty{
+    height: 160px;
 }
 .page-title {
     position: relative;

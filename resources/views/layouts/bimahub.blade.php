@@ -84,7 +84,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="iconbox style2 v2">
                         <div class="iconbox-content logosize">
-                            <img src="{{ asset('bimahub')}}/images/ira.png" alt="IRA">
+                            <img src="{{ asset('bimahub')}}/images/ira2.png" alt="IRA">
                         </div>
                     </div>
                 </div>
