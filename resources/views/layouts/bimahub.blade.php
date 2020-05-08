@@ -119,16 +119,9 @@
                     {{--</div>--}}
                 {{--</div>--}}
                 <div class="col-lg-3 col-sm-6">
-                    <div class="iconbox style2 v2">
-                        <br>
-                        <div class="iconbox-icon">
-                            <i class="fa fa-clock-o"></i>
+                        <div class="btn-more">
+                            <a href="{{ asset('bimahub')}}/downloads//BimaBox_Application_Form.pdf" title="">Apply Here</a>
                         </div>
-                        <div class="iconbox-content">
-                            <h4>Mon - Fri: 8 am - 5 pm</h4>
-                            <p>Saturday & Sunday: CLOSED</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
