@@ -152,7 +152,7 @@ return [
     */
 
     'include' => [
-        'recipe/my_recipe.php'
+        'recipe/cachedir.php'
     ],
 
     /*
