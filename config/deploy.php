@@ -61,6 +61,9 @@ return [
             'artisan:cache:clear',
             'artisan:config:cache',
             'artisan:migrate',
+//            \Deployer\run('mkdir -p {{deploy_path}}/public/page-cache'),
+//            \Deployer\run('chomd -R 775 {{deploy_path}}/public/page-cache'),
+//            \Deployer\run('chown -R www-data:www-data {{deploy_path}}/public/page-cache'),
         ],
         
         // Deployment is done and live
@@ -149,7 +152,7 @@ return [
     */
 
     'include' => [
-        //
+        'recipe/my_recipe.php'
     ],
 
     /*
