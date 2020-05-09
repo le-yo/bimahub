@@ -1,9 +1,5 @@
-
 <?php
-
 namespace Deployer;
-
-
 
 task('my_task', "echo '{{my_custom_message}}'");
 
