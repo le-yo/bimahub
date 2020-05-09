@@ -1,11 +1,8 @@
 <?php
 namespace Deployer;
 
-task('my_task', "echo '{{my_custom_message}}'");
 
-set('my_custom_message', 'hello world!');
-
-desc('My task');
-task('my_task', function () {
-    run("cd {{release_path}} && echo '{{my_custom_message}}'");
+desc('Create cache dir');
+task('create_cache_dir', function () {
+    run("cd {{release_path}}/public && mkdir page-cache && chmod -R 775 page-cache && chown -R wwww-data:www-data page-cache ");
 });
